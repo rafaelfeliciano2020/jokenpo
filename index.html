@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Jokenpo</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+     <main><!-- --> 
+          <header>
+               
+          </header>
+
+          <div class="nomeJogo">
+               <h1>Jokenpô</h1>
+          </div>
+
+          <!-- <div id= "regras"> O jogador que  conseguir 5 pontos vence !!</div> -->
+          
+<!-- Click na opção pedra - papel - tesoura -->
+          <div class="instrucoes">      
+               <li>click:</li>
+               <div class="opcao-pe-pa-te">  <!--imagem de escolha opçoees pedra - papel - tesoura -->                     
+                    <div id="id-bot-pe" > <!-- botao pedra --> 
+                        <img src="./img/pedra-p.png" alt="">
+                    </div>
+
+                    <div id="id-bot-pa"><!-- botao papel --> 
+                         <img src="./img/papel-p.png" alt="">
+                    </div>
+
+                    <div id="id-bot-te"><!-- botao tesoura --> 
+                         <img src="./img/tesoura-p.png" alt="">
+                    </div>
+               </div>
+          </div> 
+<!-- ********************************* -->
+
+<!-- Campo do jogo ********************-->
+          <div id="campo-jogo">         
+               <img  id="id-jogador1">       <!--troca a imagem conforma a jogada-->     
+               <img  id="id-computador">
+
+               <!--Pontuação**********************  -->
+               <div id="pontuação-jogador"></div>
+               <div id="pontuação-computador"></div>
+               <!--*******************************  -->
+          </div>
+
+           <!-- ganho -->
+           <div id="vencedor"></div>
+           <!--  -->
+
+<!--*******************************  -->
+
+
+          <footer>
+               <!-- <p>Rafael Feliciano</p> -->
+          </footer>
+
+     </main>
+     
+     <script src="jokenpo.js"></script>
+</body>
+</html>

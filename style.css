@@ -1,0 +1,133 @@
+body{background-color: #000;}
+/*caixa Principal do jogo*/
+main{ 
+     
+     position: relative;       
+     width: 800px;
+     height: 550px;
+     margin: auto;   
+     border: solid 4px #FFF;
+     border-radius: 0.5rem;
+     background-color: #1D1B18;
+}
+
+#regras{
+     position: absolute;
+     top: 0px;
+     left: 0px;
+     background-color: #FFF;
+}
+
+.nomeJogo{
+     /* position: absolute; */
+     text-align: center;
+     color: yellow;
+     
+}
+
+
+.instrucoes{
+     position: absolute;  /*em relação a caixa geral do jogo*/
+      text-align: center; 
+      font-size: 18px;
+      color: #FFF;
+     padding-top: 0px;
+     top: 50px;
+     left: 50px;
+     width: 250px;
+     height: 90px;
+     border: solid 2px white;
+     border-radius: 0.9rem;
+     background-color: #000;
+     box-sizing: border-box;
+
+}
+.opcao-pe-pa-te{ /*menu de opções pra*/
+     /* position: absolute; */
+     display: flex ;
+     align-items: center;
+
+     bottom: 0px ;
+     left: 0px;
+     width: 246px;
+     height: 65px;
+     border: solid 2px white;
+     border-radius: 0.9rem;
+     background-color: yellowgreen;
+     box-sizing: border-box;
+}
+
+#campo-jogo{        /*onde as mão da jogada aparecem*/
+     position: absolute; /*posição do campo em relação a caixa do jogo*/
+
+     display: flex;          /*flex alinha os itens dentro do campo-jogo*/
+     justify-content: space-between;
+     align-items: center;
+     
+     width: 700px;
+     height: 300px;
+     left: 50px;
+     bottom: 40px;
+     padding : 40px;
+     background-color: rgb(59, 207, 13);
+     border-radius: 10px;
+     box-sizing: border-box; /*Não altera o tamanho do box, mesmo com borda ou padding*/
+}
+
+#id-jogador1{            /*tamanho imagem */
+     width: 200px ;
+     height: 200px;
+     
+     
+}
+#id-computador{           /*tamanho imagem */
+     width: 200px ;
+     height: 200px;
+}
+
+
+/*Pontuaçãop*/
+#pontuação-jogador{
+     position: absolute;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     left:50px;
+     top: -20px;
+     width: 50px ;
+     height: 50px;
+     font-size: 50px;
+     border-radius: 10px;;
+     background-color: #FFF
+}
+
+#pontuação-computador{
+     position: absolute;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+     right:50px;
+     top: -20px;
+     width: 50px ;
+     height: 50px;
+     font-size: 50px;
+     border-radius: 10px;;
+     background-color: #FFF
+}
+
+#vencedor{
+     position: absolute;
+     bottom: 0px;
+     left: 250px;
+
+     width: 300px;
+     font-size: 30px;
+     color: rgb(238, 255, 2);
+     border: solid 5px crimson;
+     border-radius: 20px;
+     //background-color: aqua;
+}
